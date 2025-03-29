@@ -1,0 +1,28 @@
+   div {
+    background-color: #607d8b;
+    /* grid-row:   ;
+    grid-column:  span 1; */
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    align-content: center;
+    font-size:115%;
+    font-family: sans-serif;
+  } 
+  div:not(.grid):before {
+    counter-increment: section-counter; 
+     /* زيادة قيمة العداد */
+    content: "Element " counter(section-counter) ;
+      /* عرض قيمة العداد */
+  }
+  .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 7fr;
+    display: grid;
+    gap: 20px;
+    counter-reset: section-counter;
+  }
