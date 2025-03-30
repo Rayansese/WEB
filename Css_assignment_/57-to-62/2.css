@@ -1,0 +1,14 @@
+.layout {
+    display: grid;
+    grid-template-columns: repeat(8 , auto) ;
+    grid-template-rows: repeat(8,auto);
+}
+header {
+    /* grid-row:  ; */
+    background-color:rgb(254, 87, 34);
+    grid-column: span 8;
+
+}
+section {
+    
+}
