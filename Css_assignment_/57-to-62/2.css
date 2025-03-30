@@ -1,14 +1,33 @@
 .layout {
     display: grid;
-    grid-template-columns: repeat(8 , auto) ;
-    grid-template-rows: repeat(8,auto);
+    grid-template-columns: repeat(16 , auto) ;
+    grid-template-rows: repeat(16 , 1fr) ;
+    height: 100vh;
 }
 header {
-    /* grid-row:  ; */
-    background-color:rgb(254, 87, 34);
-    grid-column: span 8;
-
+     grid-row: span 1 ; 
+    background-color:#03a8f5;
+    grid-column: span 16;
+    padding: 10px ;
+    color: white;
 }
 section {
-    
+    background-color:rgb(254, 87, 34);
+    grid-column: span 11;
+    grid-row: 2/16;
+    padding: 10px ;
+    color: white;
+}
+aside {
+    background-color:#607d8b ;
+    grid-row: 2/16;
+    grid-column: 12/17 ;
+    padding: 10px ;
+    color: white;
+}
+footer {
+    background-color:#009788 ;
+    grid-column: span 16;
+    padding: 10px ;
+    color: white;
 }
