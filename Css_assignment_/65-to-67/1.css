@@ -20,4 +20,5 @@ div::before {
     transform: rotate(0deg);
     z-index: 0;
     position: absolute;
+
 }
