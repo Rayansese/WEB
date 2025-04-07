@@ -1,0 +1,23 @@
+div {
+    background-color: #eee ;
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    color: #03a9f5;
+    font-size: 50px;
+    font-weight: bold;
+    z-index: 6;
+    position: relative;
+}
+div::before {
+    content: "";
+    background-color: #ea1e63;
+    width: 300px;
+    height: 200px;
+    transform: rotate(0deg);
+    z-index: 4;
+    position: absolute;
+}
