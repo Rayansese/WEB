@@ -4,10 +4,11 @@ div {
     margin: 20px auto;
     background-color: blanchedalmond;
     border-radius: 50%;
-    border: 7px solid #f02264;
-    border-right: 7px solid transparent;
+    border: 7px solid #0096FF;
+    border-bottom: 7px solid transparent;
     position: relative;
     animation: an 1s linear infinite;
+    animation-play-state: paused;
 }
 
 div::before {
@@ -19,9 +20,10 @@ div::before {
     height: 70px;
     background-color: transparent;
     border-radius: 50%;
-    border: 7px solid #10d4b4;
-    border-left: 7px solid transparent;
-    animation: anB 1s linear infinite;
+    border: 7px solid #FF9F00;
+    border-bottom: 7px solid transparent;
+    animation: anB 1.5s linear infinite;
+        animation-play-state: paused;
 }
 
 div::after {
@@ -33,9 +35,10 @@ div::after {
     height: 90px;
     background-color: transparent;
     border-radius: 50%;
-    border: 7px solid #DF6500;
-    border-top: 7px solid transparent;
-    animation: anA 1s linear infinite;
+    border: 7px solid #1A1D1E;
+    border-bottom: 7px solid transparent;
+    animation: anA 2s linear infinite;
+    animation-play-state: paused;
 }
 
 @keyframes an {
@@ -68,5 +71,5 @@ div::after {
 div:hover,
 div:hover:before,
 div:hover:after {
-    animation-play-state: paused;
+    animation-play-state: running;
 }
