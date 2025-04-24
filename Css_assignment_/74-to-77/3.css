@@ -1,0 +1,78 @@
+.e {
+font-size: 800px;
+position: relative;
+}
+.e::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #FFA339;
+  right: 470px;
+  top: 179px;
+  animation: ann 3s linear  ;
+  animation-fill-mode: forwards;
+  animation-delay: 3s;
+
+}
+
+.e::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #FFA339;
+  bottom: 201px;
+  right: 26px;
+  animation: an 6s linear  ;
+  animation-fill-mode: forwards;
+}
+@keyframes an {
+  
+  15% {
+    transform: translateX(-276px);
+    
+  }
+  40% {
+    transform: translate(-276px, -500px);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-276px, -500px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-276px, -500px);
+    opacity: 0;
+  }
+  
+  
+}
+
+@keyframes ann {
+  20%{
+    transform: translateX(-285px);
+  }
+  30% {
+    transform: translate(-285px, 242px);
+  }
+  40% {
+    transform: translate(-38px, 245px);
+  }
+  50% {
+    transform: translate(-285px, 242px);
+}
+60% {
+transform: translate(-285px, 505px);
+}
+70% {
+  transform: translate(0px, 505px);
+}
+80% {
+  transform: translate(-285px, 505px);
+
+}
+90% {
+  transform: translate(-285px, 0);
+}
+}
