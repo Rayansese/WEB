@@ -1,0 +1,61 @@
+.midx {
+
+    top: 50%;
+transform: translateY(-50%);
+}
+
+header {
+    height: 64px;
+    background-color: gray;
+    position: relative;
+    margin: 0;
+    
+}
+header > img {
+    width: 60px;
+    height: 24px;
+position: absolute;
+left: 30px;
+
+
+}
+ ul {
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+ .icon > span {
+    width: 30px;
+    height: 2px;
+    margin: 0 0 5px;
+    background-color: black;
+    /* position: absolute; */
+    /* right: 10px;
+    bottom: 10px; */
+
+    
+}
+.icon {
+    position: absolute;
+    right: 40px;
+    width: 30px;
+    height: 21px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+}
+.icon >span:nth-of-type(2) {
+    width: 18px;
+}
+
+
+.icon:hover >span {
+    animation-name: links;
+    animation-timing-function: 0.5s;
+    /* background-color:aqua; */
+}
+@keyframes links {
+    span {
+width: 30px;
+         }
+}
