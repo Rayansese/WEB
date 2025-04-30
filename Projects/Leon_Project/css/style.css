@@ -47,15 +47,24 @@ left: 30px;
 .icon >span:nth-of-type(2) {
     width: 18px;
 }
-
-
-.icon:hover >span {
-    animation-name: links;
-    animation-timing-function: 0.5s;
-    /* background-color:aqua; */
-}
-@keyframes links {
-    span {
+/* @keyframes links {
+ 
+    100% {
 width: 30px;
          }
+} */
+.icon > span {
+    animation-name: links;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-direction: reverse;
 }
+.icon:hover > span {
+    /* animation-name: links;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1; */
+    animation-direction:alternate;
+    /* animation-fill-mode: forwards; */
+    /* background-color:aqua; */ 
+}
+
