@@ -67,6 +67,7 @@ position: absolute;
     min-width: 200px;
     position: absolute;
     top : 100%;
+    right: 40px;
     flex-direction: column;
     gap: 10px;
     background-color: whitesmoke;
@@ -77,14 +78,18 @@ position: absolute;
 .links > ul > li {
     padding: 15px 15px 15px 20px;
     max-width: 200px;
+    min-width: 200px;
     
-    border-bottom: 1px solid gray;
+
     
 }
+.links > ul > li:not(:last-child) {
+  border-bottom: 1px solid gray;
+}
 .links > ul > li > a {
-    color : black;
+    color : #333;
     text-decoration: none;
-padding-left: 20px;
+/* padding: 15px; */
 }
  .icon > span {
     width: 30px;
@@ -122,11 +127,12 @@ width: 30px;
 .icon:hover > span  {
     width: 30px;
 }
-.icon:hover ~ ul  {
+.icon:hover ~ ul,
+.links > ul:hover
+,.links > ul::before 
+   {
     display: flex;
-    background-color: whitesmoke;
-    
-    
+
 }
 ul::before {
     content: "";
