@@ -129,8 +129,8 @@ width: 30px;
     width: 30px;
 }
 .icon:hover ~ ul,
-.links > ul:hover,
-.links > ul:hover::before ~ ul
+.links > ul:hover
+,.links > ul:hover::before  
    {
     display: flex;
 
@@ -155,8 +155,25 @@ section {
    background-size: cover;
    height: calc(-64px + 100vh);
    width: auto;
+   position: relative;
 }
-section > h1 {
+.landing  h1 {
+    margin : 0;
+    font-size: 50px;
+    font-weight: bold;
     color: var(--main-color);
-    position: absolute;
+    
+}
+
+.landing .intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+    text-align: center;
+}
+.landing p {
+  font-size: 19px;
+  line-height: 1.8;
+
 }
