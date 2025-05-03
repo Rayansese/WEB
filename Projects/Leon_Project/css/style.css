@@ -133,6 +133,7 @@ width: 30px;
 ,.links > ul:hover::before  
    {
     display: flex;
+    z-index: 1;
 
 }
 ul::before {
@@ -166,11 +167,14 @@ section {
 }
 
 .landing .intro {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50% , -50%);
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
+    width: 300px;
+
 }
 .landing p {
   font-size: 19px;
