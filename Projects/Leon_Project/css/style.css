@@ -243,7 +243,7 @@ grid-gap: 20px;
 }
 .services .services-content .srv .text h3 {
   margin: 0 0 20px
- } 
+} 
 .services .services-content .srv .text p {
   color: #444;
   font-weight: 300;
@@ -272,3 +272,17 @@ grid-gap: 20px;
   }
 }
 /* end Services  */
+
+/* start portolio */
+.portfolio {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+}
+.portfolio .portfoli-content {
+  display: inline-flex;
+
+}
+.po {
+    flex-flow: 1;
+}
+/* end portfolio */
