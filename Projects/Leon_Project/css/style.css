@@ -131,7 +131,7 @@ width: 30px;
 }
 .icon:hover > span {
   width: 30px;
-}
+} 
 .icon:hover ~ ul,
 .links > ul:hover,
 .links > ul:hover::before {
